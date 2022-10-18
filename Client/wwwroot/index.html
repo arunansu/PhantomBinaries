@@ -20,6 +20,17 @@
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 100) {
+          $("header").addClass("background-header");
+        } else {
+          $("header").removeClass("background-header");
+        }
+      });
+    </script>
 </body>
 
 </html>
